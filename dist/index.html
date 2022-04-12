@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>epNeo - Simple Full Screen Kiosk Fullscreen App </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+
+<!-- Imported from internet -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- Imported from internet-->
+
+<div class="container">
+  <input type="checkbox" name="" id="menuBtn">
+  <div class="menu_overlay">
+    <label for="menuBtn">
+      <i class="fas fa-times"></i>
+    </label>
+    <ul>
+      <li><a href="#">        
+        <label for="menuBtn">
+          <img src="media/home.png" alt="" width="320" height="180">
+        </label>
+      </a></li>
+      <!-- <li><a href="#">About</a></li> -->
+      <li><a href="#">
+        <button>
+          <img src="media/floorplan.png" alt="" width="320" height="180">
+        </button>
+        <div class="map" id="map">
+          <div class="map-left">
+            <!-- <div class="title">Lorem ipsum dolor sit amet.</div> -->
+            <!-- <button class="close-btn">&times;</button> -->
+            <img src="media/iaq-black-qr.png" alt="iaq App Qr code" width="300px">
+            <br />
+            <span class="downloadText">Download IAQ App for iOS</span>
+            
+          </div>
+          <div class="map-body">
+            <img src="media/floorplan.png" alt="" width="60%" height="60%">
+          </div>
+          <div class="map-right">
+            <img src="media/kaiterra-black-qr.png" alt="iaq App Qr code" width="300px">
+            <br />
+            <span class="downloadTextWhite">Download Kaiterra for iOS</span>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </a></li>
+      <!-- <li><a href="#">Contact</a></li> -->
+    </ul>
+  </div>
+  <div class="landing_page">
+    <div class="menu">
+      <label for="menuBtn">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+
+      <div class="parent">
+        <div class="child">
+  
+          <img src="media/epneo_logo.png" alt="" width="200px" height="200px">
+
+        </div>
+        <div class="child">
+          <h1><span class="main_text">Flexi Connect</span></h1>
+          <br><br>
+          <video id="video" width="90%" height="90%" autoplay muted loop preload="auto" playsinline>
+          <source src="media/video3.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <div class="child">
+          <iframe width="90%" height="90%" src="https://www.google.com/" sandbox> </iframe>
+          <!-- <input type="button" value="Back" onclick="history.back()"> -->
+
+        </div>
+        <div class="child">4</div>
+      </div>  
+  </div>
+</div>
+<!-- partial -->
+<script src="zoom.js"></script>
+</body>
+</html>
